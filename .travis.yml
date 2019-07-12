@@ -10,7 +10,7 @@ env:
 install: true
 
 script:
-  - go test -v -cover ./...
+  - go test -bench=. -benchmem ./...
 
 cache:
   directories:
