@@ -1,0 +1,18 @@
+dist: xenial
+
+language: go
+
+go: 1.x
+
+env:
+  - GO111MODULE=on
+
+install: true
+
+script:
+  - go test -v -cover ./...
+
+cache:
+  directories:
+    - $HOME/.cache/go-build
+    - $HOME/gopath/pkg/mod
