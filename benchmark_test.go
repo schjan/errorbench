@@ -1,13 +1,29 @@
 package errorbench
 
 import (
-	"github.com/giantswarm/microerror"
-	"github.com/pkg/errors"
-	"golang.org/x/xerrors"
+	"errors"
+	"fmt"
 	"testing"
+
+	"github.com/giantswarm/microerror"
+	pkgerrors "github.com/pkg/errors"
+	"golang.org/x/xerrors"
 )
 
 var result bool
+
+
+func BenchmarkErrors(b *testing.B) {
+	var ReallyBadError = errors.New("something bad happened")
+	err := fmt.Errorf("really bad!: %w", ReallyBadError)
+
+	var res bool
+	for i := 0; i < b.N; i++ {
+		res = errors.Is(err, ReallyBadError)
+	}
+
+	result = res
+}
 
 func BenchmarkXerrors(b *testing.B) {
 	var ReallyBadError = xerrors.New("Something bad happened")
@@ -22,12 +38,12 @@ func BenchmarkXerrors(b *testing.B) {
 }
 
 func BenchmarkPkgErrors(b *testing.B) {
-	var ReallyBadError = errors.New("Something bad happened")
-	err := errors.Wrap(ReallyBadError, "Really bad!")
+	var ReallyBadError = pkgerrors.New("Something bad happened")
+	err := pkgerrors.Wrap(ReallyBadError, "Really bad!")
 
 	var res bool
 	for i := 0; i < b.N; i++ {
-		res = errors.Cause(err) == ReallyBadError
+		res = pkgerrors.Cause(err) == ReallyBadError
 	}
 
 	result = res

@@ -1,6 +1,6 @@
 module github.com/schjan/errorbench
 
-go 1.12
+go 1.13
 
 require (
 	github.com/giantswarm/microerror v0.0.0-20190815145748-cb07ec533b50
