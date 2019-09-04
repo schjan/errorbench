@@ -1,5 +1,7 @@
 github.com/giantswarm/microerror v0.0.0-20190605150300-f446cc816a48 h1:Mn7QWbBrHDfr+7D3Q51dKeJdXTKQCGl2zDEyHJi27W0=
 github.com/giantswarm/microerror v0.0.0-20190605150300-f446cc816a48/go.mod h1://Lo9dKJ8P2TBciuky5fDHEItccyvZOWE+B/0JiJT8A=
+github.com/giantswarm/microerror v0.0.0-20190815145748-cb07ec533b50 h1:QvSOi2v0Ks/B4chcyvlcb7RTZOQEebaHgdXEfunT9Mk=
+github.com/giantswarm/microerror v0.0.0-20190815145748-cb07ec533b50/go.mod h1://Lo9dKJ8P2TBciuky5fDHEItccyvZOWE+B/0JiJT8A=
 github.com/juju/errgo v0.0.0-20140925100237-08cceb5d0b53 h1:tGpfbOOO0SV3qtMUx8O9RbJeei6VDBwnpQQ0JYIFaVg=
 github.com/juju/errgo v0.0.0-20140925100237-08cceb5d0b53/go.mod h1:ZtgUe3RyZisw/AlQjgU9DeO3hqUH9E/bkreI2FLg/QY=
 github.com/kr/pretty v0.1.0 h1:L/CwN0zerZDmRFUapSPitk6f+Q3+0za1rQkzVuMiMFI=
@@ -11,5 +13,9 @@ github.com/pkg/errors v0.8.1 h1:iURUrRGxPUNPdy5/HRSm+Yj6okJ6UtLINN0Q9M4+h3I=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 golang.org/x/xerrors v0.0.0-20190513163551-3ee3066db522 h1:bhOzK9QyoD0ogCnFro1m2mz41+Ib0oOhfJnBp5MR4K4=
 golang.org/x/xerrors v0.0.0-20190513163551-3ee3066db522/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
+golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7 h1:9zdDQZ7Thm29KFXgAX/+yaf3eVbP7djjWp/dXAppNCc=
+golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
 gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 h1:qIbj1fsPNlZgppZ+VLlY7N33q108Sa+fhmuc+sWQYwY=
 gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 h1:YR8cESwS4TdDjEe65xsg0ogRM/Nc3DYOhEAlW+xobZo=
+gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
